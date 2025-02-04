@@ -1,0 +1,23 @@
+SafeEdit/                 # Root folder
+├── venv/                 # Virtual environment (exclude from Git)
+├── app.py                # Main Flask application entry point
+├── requirements.txt      # List of Python dependencies
+├── .gitignore            # Files/folders to exclude from Git (e.g., venv, .env)
+├── .env                  # Environment variables (SECRET_KEY, API keys, etc.)
+│
+├── templates/            # HTML templates (Jinja2)
+│   ├── login.html
+│   ├── register.html
+│   ├── dashboard.html
+│   └── projects/         # Subfolder for project-related templates (future use)
+│
+├── static/               # CSS, JavaScript, images
+│   ├── css/
+│   │   └── style.css     # Custom styles
+│   └── js/
+│       └── script.js     # Frontend logic (future use)
+│
+├── instance/             # Instance-specific files (e.g., local SQLite DB)
+│   └── database.db       # SQLite database (auto-created when you run app.py)
+│
+└── models.py             # Database models (User, Project, etc.) *optional*

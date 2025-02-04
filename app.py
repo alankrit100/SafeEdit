@@ -5,6 +5,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from flask_mail import Mail, Message
 from flask_migrate import Migrate
 import secrets
+from models import User
 
 # Initialize Flask app
 app = Flask(__name__)
@@ -131,3 +132,5 @@ if __name__ == '__main__':
     with app.app_context():
         db.create_all()  # Create database tables if they don't exist
     app.run(debug=True)
+    
+    
